@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/tech.cariad.arche.oss.platform.structureview/tech.cariad.arche.oss.platform.structureview.mpl" folder="structure_view" />
+      <modulePath path="$PROJECT_DIR$/languages/tech.cariad.arche.oss.platform.userscripts/tech.cariad.arche.oss.platform.userscripts.mpl" folder="user_scripts" />
+      <modulePath path="$PROJECT_DIR$/solutions/tech.cariad.arche.oss.platform.build/tech.cariad.arche.oss.platform.build.msd" folder="_build" />
+      <modulePath path="$PROJECT_DIR$/solutions/tech.cariad.arche.oss.platform.buildAllScripts/tech.cariad.arche.oss.platform.buildAllScripts.msd" folder="_build" />
+      <modulePath path="$PROJECT_DIR$/solutions/tech.cariad.arche.oss.platform.structureview.plugin/tech.cariad.arche.oss.platform.structureview.plugin.msd" folder="structure_view" />
+      <modulePath path="$PROJECT_DIR$/solutions/tech.cariad.arche.oss.platform.userscripts.pluginSolution/tech.cariad.arche.oss.platform.userscripts.pluginSolution.msd" folder="user_scripts" />
+      <modulePath path="$PROJECT_DIR$/solutions/tech.cariad.arche.oss.platform.userscripts.sandbox/tech.cariad.arche.oss.platform.userscripts.sandbox.msd" folder="user_scripts" />
+    </projectModules>
+  </component>
+</project>

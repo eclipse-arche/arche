@@ -1,0 +1,33 @@
+# General
+*.class
+*.jar
+
+# Scripts
+.gradle
+.kotlin
+
+# Build
+build
+
+# Gradle properties
+/gradle.properties
+
+# Ignore MPS Workspace & Caches
+workspace.xml
+.mps-caches/
+code/languages/*/.mps/shelf
+
+# Generated artifacts
+source_gen
+source_gen.caches
+classes_gen
+classes_gen.caches
+test_gen
+test_gen.caches
+TESTS-TestSuites.xml
+TEST-*.xml
+junit*.properties
+
+# Temporary
+**/build
+**/.DS_Store
