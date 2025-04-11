@@ -26,7 +26,7 @@ val ant_lib: Configuration by configurations.creating
 
 dependencies {
     mps("com.jetbrains:mps:2024.1.3")
-    ant_lib("org.apache.ant:ant-junit:1.10.15")
+    ant_lib("org.apache.ant:ant-junit:1.10.6")
 }
 
 dependencyLocking {
@@ -103,9 +103,9 @@ val buildAllScripts by tasks.registering(BuildLanguages::class) {
 }
 
 // Generates the jar files for the project
-val buildPlatform by tasks.registering(BuildLanguages::class) {
+val buildOssPlatform by tasks.registering(BuildLanguages::class) {
     dependsOn(buildAllScripts)
-    script = "${layout.buildDirectory.get()}/scripts/build-platform.xml"
+    script = "${layout.buildDirectory.get()}/scripts/build-ossPlatform.xml"
 }
 
 // -------- Cleaning Tasks ----------------------
@@ -120,4 +120,4 @@ tasks.register<Delete>("clean") {
 // -------- Default Tasks ----------------------
 
 // Default task to execute when gradlew is called without any arguments
-defaultTasks("clean", "buildPlatform")
+defaultTasks("clean", "buildOssPlatform")

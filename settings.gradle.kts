@@ -8,4 +8,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "arche"
+rootProject.name = "ArchitectureModelingFramework_OSS"

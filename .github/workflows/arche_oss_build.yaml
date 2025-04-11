@@ -17,8 +17,6 @@ jobs:
   build_platform:
     name: Build Platform
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
 
     steps:
     - uses: actions/checkout@v4
@@ -51,5 +49,5 @@ jobs:
     - name: Archive distribution
       uses: actions/upload-artifact@v4
       with:
-        name: org.eclipse.arche.platform
-        path: build/artifacts/org.eclipse.arche.platform/
+        name: tech.cariad.arche.oss.platform
+        path: build/artifacts/tech.cariad.arche.oss.platform/
