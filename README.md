@@ -1,7 +1,7 @@
-# ArchitectureModelingFramework_OSS
+# arche
 
 The repository containing the open-source part of ArchE.
 
 
 ### Projects
-- `tech.cariad.arche.oss.platform` - [here](code/languages/tech.cariad.arche.oss.platform/README.md).
+- `org.eclipse.arche.platform` - [here](code/languages/org.eclipse.arche.platform/README.md).
