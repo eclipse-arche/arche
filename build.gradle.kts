@@ -103,9 +103,9 @@ val buildAllScripts by tasks.registering(BuildLanguages::class) {
 }
 
 // Generates the jar files for the project
-val buildOssPlatform by tasks.registering(BuildLanguages::class) {
+val buildPlatform by tasks.registering(BuildLanguages::class) {
     dependsOn(buildAllScripts)
-    script = "${layout.buildDirectory.get()}/scripts/build-ossPlatform.xml"
+    script = "${layout.buildDirectory.get()}/scripts/build-platform.xml"
 }
 
 // -------- Cleaning Tasks ----------------------
@@ -120,4 +120,4 @@ tasks.register<Delete>("clean") {
 // -------- Default Tasks ----------------------
 
 // Default task to execute when gradlew is called without any arguments
-defaultTasks("clean", "buildOssPlatform")
+defaultTasks("clean", "buildPlatform")
