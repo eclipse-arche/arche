@@ -27,7 +27,7 @@ jobs:
           } >> "$GRADLE_USER_HOME/gradle.properties"
 
       - uses: actions/checkout@v4
-      - uses: cariad-optima/optima-actions@234c7cc840086adcdf9b274f3a76c4f23cfcf6ce #v4.75
+      - uses: cariad-optima/optima-actions@v4
         env:
           GRADLE_USER_HOME: ${{ runner.temp }}/gradle
         with:
