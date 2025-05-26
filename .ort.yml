@@ -1,0 +1,3 @@
+analyzer:
+  enabled_package_managers:
+  - "GradleInspector"
