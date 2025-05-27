@@ -26,7 +26,7 @@ val ant_lib: Configuration by configurations.creating
 
 dependencies {
     mps("com.jetbrains:mps:2024.1.3")
-    ant_lib("org.apache.ant:ant-junit:1.10.6")
+    ant_lib("org.apache.ant:ant-junit:1.10.15")
 }
 
 dependencyLocking {
