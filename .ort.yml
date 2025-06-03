@@ -1,11 +1,11 @@
 analyzer:
   enabled_package_managers:
-  - "GradleInspector"
+    - "GradleInspector"
 resolutions:
   issues:
-  - message: "IOException: Could not resolve provenance for package 'Maven:com.jetbrains:mps:2024.1.3'.*"
-    reason: "BUILD_TOOL_ISSUE"
-    comment: "MPS does not provide source artifacts."
+    - message: "IOException: Could not resolve provenance for package 'Maven:com.jetbrains:mps:2024.1.3'.*"
+      reason: "BUILD_TOOL_ISSUE"
+      comment: "MPS does not provide source artifacts."
 curations:
   license_findings:
     - path: "LICENSE"
