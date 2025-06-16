@@ -17,7 +17,7 @@ jobs:
         shell: bash
         env:
           GRADLE_USER_HOME: ${{ runner.temp }}/gradle
-          USERNAME: ${{ secrets.ARCHE_BOT_DEV_USERNAME }}
+          USERNAME: ${{ secrets.ARCHE_BOT_DEV_DEVSTACK_USERNAME }}
           PASSWORD: ${{ secrets.ARCHE_BOT_DEV_DEVSTACK_ARTIFACTORY_TOKEN }}
         run: |
           mkdir -p "$GRADLE_USER_HOME"
