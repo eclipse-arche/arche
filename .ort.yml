@@ -1,6 +1,11 @@
 analyzer:
   enabled_package_managers:
     - "GradleInspector"
+excludes:
+  paths:
+    - pattern: "sbom/bom.cyclonedx.json"
+      reason: "DOCUMENTATION_OF"
+      comment: "This is the SBOM file of the project."
 resolutions:
   issues:
     - message: "IOException: Could not resolve provenance for package 'Maven:com.jetbrains:mps:2024.1.3'.*"
