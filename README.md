@@ -29,10 +29,12 @@ We welcome contributions from the community!
 
 For more details, see: https://www.eclipse.org/legal/ECA.php
 
-## License
-
-This project will be licensed under the MIT or Apache License. Finals descision is dependent on currently ongoing final opensource scans of the already existing code.
-
 ## Contact
 
 For more information, visit the project page: https://projects.eclipse.org/projects/automotive.arche
+
+## Projects
+- `org.eclipse.arche.platform` - [here](code/languages/org.eclipse.arche.platform/README.md)
+
+## License
+All files in this repository are Copyright (c) 2025 CARIAD SE and are licensed under the terms of the MIT license, unless otherwise stated.
