@@ -1,0 +1,27 @@
+# This is a Gradle generated file for dependency locking.
+# Manual edits can break the build and are not advised.
+# This file is expected to be part of source control.
+com.fasterxml.jackson.core:jackson-annotations:2.13.5=modelcheckBackend
+com.fasterxml.jackson.core:jackson-core:2.13.5=modelcheckBackend
+com.fasterxml.jackson.core:jackson-databind:2.13.5=modelcheckBackend
+com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.13.5=modelcheckBackend
+com.fasterxml.jackson:jackson-bom:2.13.5=modelcheckBackend
+com.fasterxml.woodstox:woodstox-core:6.4.0=modelcheckBackend
+com.jetbrains:mps:2024.1.3=mps
+com.xenomachina:kotlin-argparser:2.0.7=executeBackend,generateBackend,modelcheckBackend,remigrateBackend
+com.xenomachina:xenocom:0.0.7=executeBackend,generateBackend,modelcheckBackend,remigrateBackend
+de.itemis.mps.build-backends:execute-generators:1.22.2.139.0bf1309=generateBackend
+de.itemis.mps.build-backends:execute:1.22.2.139.0bf1309=executeBackend
+de.itemis.mps.build-backends:modelcheck:1.22.2.139.0bf1309=modelcheckBackend
+de.itemis.mps.build-backends:project-loader:3.0.2.139.0bf1309=executeBackend,generateBackend,modelcheckBackend,remigrateBackend
+de.itemis.mps.build-backends:remigrate:0.3.0.139.0bf1309=remigrateBackend
+junit:junit:4.13.2=ant_lib
+org.apache.ant:ant-junit:1.10.15=ant_lib
+org.apache.ant:ant-launcher:1.10.15=ant_lib
+org.apache.ant:ant:1.10.15=ant_lib
+org.codehaus.woodstox:stax2-api:4.2.1=modelcheckBackend
+org.hamcrest:hamcrest-core:1.3=ant_lib
+org.jetbrains.kotlin:kotlin-stdlib:2.1.20=executeBackend,generateBackend,modelcheckBackend,remigrateBackend
+org.jetbrains.kotlin:kotlin-test:2.1.20=modelcheckBackend
+org.jetbrains:annotations:13.0=executeBackend,generateBackend,modelcheckBackend,remigrateBackend
+empty=buildDependencies,mpsDependencies

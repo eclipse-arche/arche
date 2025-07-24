@@ -1,0 +1,55 @@
+name: CI MPS Build
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - 'maintenance/*'
+  pull_request:
+    branches:
+      - main
+      - develop
+      - 'maintenance/*'
+  workflow_dispatch:
+
+jobs:
+  build_platform:
+    name: Build Platform
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK
+      uses: actions/setup-java@v4
+      with:
+        java-version: 21
+        distribution: temurin
+
+    - name: Set up Gradle
+      uses: gradle/actions/setup-gradle@v4
+          
+    - name: Build
+      run: |
+          xvfb-run ./gradlew --console=plain --info --stacktrace
+
+    - name: Verify uncommitted changes
+      run: |
+        if [[ -n $(git status --porcelain | head --lines=1) ]]
+        then          
+          echo "Uncommitted changes detected after build, run './gradlew' and/or update .gitignore to fix:"
+          git status
+          echo ">>>>>>>>>>>>>>>>>>>>>"
+          git diff
+          echo "<<<<<<<<<<<<<<<<<<<<<"
+          exit 1
+        fi
+
+    - name: Archive distribution
+      uses: actions/upload-artifact@v4
+      with:
+        name: org.eclipse.arche.platform
+        path: build/artifacts/org.eclipse.arche.platform/

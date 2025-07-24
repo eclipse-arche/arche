@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/org.eclipse.arche.platform.structureview/org.eclipse.arche.platform.structureview.mpl" folder="structure_view" />
+      <modulePath path="$PROJECT_DIR$/languages/org.eclipse.arche.platform.userscripts/org.eclipse.arche.platform.userscripts.mpl" folder="user_scripts" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.eclipse.arche.platform.build/org.eclipse.arche.platform.build.msd" folder="_build" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.eclipse.arche.platform.buildAllScripts/org.eclipse.arche.platform.buildAllScripts.msd" folder="_build" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.eclipse.arche.platform.structureview.plugin/org.eclipse.arche.platform.structureview.plugin.msd" folder="structure_view" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.eclipse.arche.platform.userscripts.pluginSolution/org.eclipse.arche.platform.userscripts.pluginSolution.msd" folder="user_scripts" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.eclipse.arche.platform.userscripts.sandbox/org.eclipse.arche.platform.userscripts.sandbox.msd" folder="user_scripts" />
+    </projectModules>
+  </component>
+</project>
