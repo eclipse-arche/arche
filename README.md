@@ -1,10 +1,38 @@
-# License
-All files in this repository are Copyright (c) 2025 CARIAD SE and are licensed under the terms of the MIT license, unless otherwise stated.
+# Welcome to ArchE
 
-# arche
-ArchE is an architecture modeling tool tailored for software developers and electrical/electronic (E/E) architects engaged in the automotive sector. It enables the creation of precise models that integrate both software and hardware components, detailing their interfaces, behaviors, and resource allocations. This holistic approach ensures a unified and consistent view of the vehicle's architecture, facilitating efficient development and integration. Built upon JetBrains' Meta Programming System (MPS), ArchE allows for the creation of domain-specific languages (DSLs), enabling users to define processes directly as rules. By consolidating various architectural models—spanning system, software, security, and more—into a single platform, ArchE eliminates redundancy and inconsistency, promoting a cohesive development environment.
+This repository contains the open source part of the tool ArchE.
 
-In the rapidly evolving automotive industry, the complexity of software and hardware architectures has surged, demanding advanced tools to streamline development. Recognizing the absence of a tailored solution, CARIAD developed ArchE—a custom-built architecture tool designed to accelerate and optimize the development of complex automotive systems. With this repository, CARIAD is step-by-step open-sourcing parts of developed Domain Specific Languages.
+## Overview
 
-### Projects
-- `org.eclipse.arche.platform` - [here](code/languages/org.eclipse.arche.platform/README.md).
+ArchE (Architecture Enabler) is an open-source tool developed under the Eclipse Automotive Working Group. It supports architecture modeling in the automotive domain using a holistic Model-Based Systems Engineering (MBSE) approach. ArchE aims to replace fragmented toolchains by providing a unified environment for modeling software components derived from high-level stakeholder requirements.
+
+## Features
+
+- Unified architecture modeling environment
+- Single source of truth for architecture-related activities
+- Integration with engineering disciplines:
+  * Resource estimation
+  * Timing analysis
+  * Safety and security assessments
+- Lifecycle integration with software development processes:
+  * Diff/branch/merge support
+  * Testing and integration workflows
+
+## Contribution Guidelines
+
+We welcome contributions from the community!
+
+- Fork the repository and create your feature branch.
+- Follow the Eclipse Contributor Agreement (ECA) guidelines.
+- Ensure code is well-documented and tested.
+- Submit a pull request with a clear description of your changes.
+
+For more details, see: https://www.eclipse.org/legal/ECA.php
+
+## License
+
+This project will be licensed under the MIT or Apache License. Finals descision is dependent on currently ongoing final opensource scans of the already existing code.
+
+## Contact
+
+For more information, visit the project page: https://projects.eclipse.org/projects/automotive.arche
