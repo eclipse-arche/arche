@@ -18,7 +18,7 @@ repositories {
 // Specify the JBR version, see readme https://github.com/JetBrains/JetBrainsRuntime?tab=readme-ov-file 
 // Not all JBR versions are available on itemis cloud https://mvnrepository.com/artifact/com.jetbrains.jdk/jbr 
 downloadJbr {
-    jbrVersion = "21.0.5-b631.16" 
+    jbrVersion = "17.0.14-b1367.22" 
 }
 
 val mps: Configuration by configurations.creating
