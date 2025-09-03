@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      statuses: write
 
     steps:
     - uses: actions/checkout@v4
@@ -53,3 +54,21 @@ jobs:
       with:
         name: org.eclipse.arche.platform
         path: build/artifacts/org.eclipse.arche.platform/
+
+    - name: Report build_platform status check
+      if: always()
+      uses: actions/github-script@v7
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const state = '${{ job.status }}' === 'success' ? 'success' : 'failure'
+          github.rest.repos.createCommitStatus({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            sha: context.sha,
+            state: state,
+            context: 'build_platform',
+            description: `Build completed with status: ${{ job.status }}`
+          })
+
+
