@@ -51,6 +51,9 @@ jobs:
 
     - name: Archive distribution
       uses: actions/upload-artifact@v4
+      with:
+        name: org.eclipse.arche.platform
+        path: build/artifacts/org.eclipse.arche.platform/
 
     - name: Report build_platform status check
       if: always()
