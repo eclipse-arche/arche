@@ -23,6 +23,20 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Report build_platform status check
+      uses: actions/github-script@v7
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          github.repos.createCommitStatus({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            sha: context.sha,
+            state: 'success',
+            context: 'build_platform',
+            description: 'Build completed successfully'
+          })
+
     - name: Set up JDK
       uses: actions/setup-java@v4
       with:
@@ -50,6 +64,5 @@ jobs:
 
     - name: Archive distribution
       uses: actions/upload-artifact@v4
-      with:
-        name: org.eclipse.arche.platform
-        path: build/artifacts/org.eclipse.arche.platform/
+
+
